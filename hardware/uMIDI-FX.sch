@@ -34,7 +34,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -65,6 +65,14 @@ F2 "9V_Wah" O R 2450 1450 60
 F3 "-6V_VCA" O R 2450 1800 60 
 F4 "6V_VCA" O R 2450 1700 60 
 F5 "GND" O R 2450 2300 60 
-F6 "6V" O R 2450 2100 60 
+F6 "9V_Digital" O R 2450 2100 60 
+$EndSheet
+$Sheet
+S 1850 4400 1050 850 
+U 54D5349F
+F0 "Wah" 60
+F1 "wah.sch" 60
+F2 "9V_Wah" I L 1850 4550 60 
+F3 "GND" I L 1850 4950 60 
 $EndSheet
 $EndSCHEMATC
