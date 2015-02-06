@@ -34,7 +34,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -379,4 +379,33 @@ F 3 "" H 7700 4050 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	7700 4050 7700 3950
+$Sheet
+S 1700 3600 1150 1000
+U 54D53732
+F0 "Single True Bypass" 60
+F1 "bypass.sch" 60
+F2 "Loop_In" I L 1700 4500 60 
+F3 "Loop_Out" O L 1700 4350 60 
+F4 "FX_Send" O R 2850 4350 60 
+F5 "FX_Return" I R 2850 4500 60 
+F6 "V+" I L 1700 3700 60 
+F7 "GND" I L 1700 3850 60 
+F8 "Ctrl" I L 1700 4100 60 
+$EndSheet
+Wire Wire Line
+	2850 4350 3500 4350
+Wire Wire Line
+	3500 4350 3500 3400
+Wire Wire Line
+	3500 3400 3750 3400
+Wire Wire Line
+	2850 4500 3500 4500
+Wire Wire Line
+	3500 4500 3500 5100
+Wire Wire Line
+	3500 5100 8100 5100
+Wire Wire Line
+	8100 5100 8100 3700
+Wire Wire Line
+	8100 3700 7850 3700
 $EndSCHEMATC
