@@ -1,4 +1,4 @@
-update=Sat 07 Feb 2015 06:46:02 PM CET
+update=Sun 08 Feb 2015 06:09:50 PM CET
 version=1
 last_client=kicad
 [cvpcb]
@@ -73,3 +73,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=max1044
 LibName32=stacked_jack
+LibName33=relais_dpdt

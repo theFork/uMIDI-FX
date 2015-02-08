@@ -29,6 +29,9 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:max1044
+LIBS:stacked_jack
+LIBS:relais_dpdt
 LIBS:uMIDI-FX-cache
 EELAYER 24 0
 EELAYER END
@@ -46,8 +49,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 1900 2000 0    60   Input ~ 0
 9V_Wah
-Text HLabel 1900 2600 0    60   Input ~ 0
-GND
 $Comp
 L R R?
 U 1 1 54D5397B
@@ -81,13 +82,6 @@ F 3 "" H 4700 3400 30  0000 C CNN
 	1    4700 3400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4250 3400 4450 3400
-Wire Wire Line
-	4350 3400 4350 3150
-Wire Wire Line
-	4350 3150 4500 3150
-Connection ~ 4350 3400
 $Comp
 L C C?
 U 1 1 54D53C29
@@ -99,13 +93,6 @@ F 3 "" H 5350 3400 60  0000 C CNN
 	1    5350 3400
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4950 3400 5150 3400
-Wire Wire Line
-	5050 3400 5050 3150
-Wire Wire Line
-	5050 3150 4900 3150
-Connection ~ 5050 3400
 $Comp
 L LM741 U?
 U 1 1 54D53DF6
@@ -117,8 +104,6 @@ F 3 "" H 6350 3300 60  0000 C CNN
 	1    6350 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 3400 5850 3400
 $Comp
 L GND #PWR?
 U 1 1 54D53F40
@@ -174,18 +159,6 @@ F 3 "" H 5450 2450 60  0000 C CNN
 	1    5450 2450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5050 2100 5800 2100
-Wire Wire Line
-	5800 2100 5800 3200
-Wire Wire Line
-	5800 3200 5850 3200
-Wire Wire Line
-	5150 2200 5150 2100
-Connection ~ 5150 2100
-Wire Wire Line
-	5450 2250 5450 2100
-Connection ~ 5450 2100
 $Comp
 L GND #PWR?
 U 1 1 54D54455
@@ -208,8 +181,6 @@ F 3 "" H 5450 2700 60  0000 C CNN
 	1    5450 2700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5450 2700 5450 2650
 $Comp
 L C C?
 U 1 1 54D54B27
@@ -232,31 +203,10 @@ F 3 "" H 2300 2300 60  0000 C CNN
 	1    2300 2300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2300 2000 2300 2100
-Wire Wire Line
-	2000 2100 2000 2000
-Connection ~ 2000 2000
-Wire Wire Line
-	2000 2600 2000 2500
-Wire Wire Line
-	2300 2600 2300 2500
-Connection ~ 2000 2600
-Wire Wire Line
-	2150 2600 2150 2650
-Connection ~ 2150 2600
-Wire Wire Line
-	1900 2000 2300 2000
-Wire Wire Line
-	1900 2600 2300 2600
 Text HLabel 4450 2100 0    60   Input ~ 0
 9V_Wah
-Wire Wire Line
-	4450 2100 4550 2100
 Text HLabel 6250 2800 1    60   Input ~ 0
 9V_Wah
-Wire Wire Line
-	6250 2900 6250 2800
 $Comp
 L C C?
 U 1 1 54D554E3
@@ -290,25 +240,6 @@ F 3 "" H 6400 4200 30  0000 C CNN
 	1    6400 4200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6350 3950 6400 3950
-Wire Wire Line
-	5700 4200 6150 4200
-Wire Wire Line
-	5700 3400 5700 4300
-Connection ~ 5700 3400
-Wire Wire Line
-	5700 3950 5950 3950
-Wire Wire Line
-	7000 4200 6650 4200
-Wire Wire Line
-	7000 3300 7000 4300
-Wire Wire Line
-	7000 3950 6900 3950
-Wire Wire Line
-	6850 3300 7150 3300
-Connection ~ 7000 3950
-Connection ~ 5700 3950
 $Comp
 L C C?
 U 1 1 54D55B50
@@ -331,14 +262,6 @@ F 3 "" H 7000 4500 60  0000 C CNN
 	1    7000 4500
 	-1   0    0    1   
 $EndComp
-Connection ~ 7000 4200
-Connection ~ 5700 4200
-Wire Wire Line
-	5700 4700 5700 4800
-Wire Wire Line
-	5700 4800 7000 4800
-Wire Wire Line
-	7000 4800 7000 4700
 $Comp
 L C C?
 U 1 1 54D563C0
@@ -350,7 +273,6 @@ F 3 "" H 7350 3300 60  0000 C CNN
 	1    7350 3300
 	0    1    1    0   
 $EndComp
-Connection ~ 7000 3300
 $Comp
 L POT RV?
 U 1 1 54D56709
@@ -362,10 +284,6 @@ F 3 "" H 7700 3700 60  0000 C CNN
 	1    7700 3700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7550 3300 7700 3300
-Wire Wire Line
-	7700 3300 7700 3450
 $Comp
 L GND #PWR?
 U 1 1 54D56848
@@ -377,35 +295,124 @@ F 3 "" H 7700 4050 60  0000 C CNN
 	1    7700 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7700 4050 7700 3950
 $Sheet
 S 1700 3600 1150 1000
 U 54D53732
 F0 "Single True Bypass" 60
 F1 "bypass.sch" 60
-F2 "Loop_In" I L 1700 4500 60 
-F3 "Loop_Out" O L 1700 4350 60 
-F4 "FX_Send" O R 2850 4350 60 
-F5 "FX_Return" I R 2850 4500 60 
-F6 "V+" I L 1700 3700 60 
-F7 "GND" I L 1700 3850 60 
-F8 "Ctrl" I L 1700 4100 60 
+F2 "Loop_In" I L 1700 4400 60 
+F3 "Loop_Out" O L 1700 4250 60 
+F4 "FX_Send" O R 2850 4250 60 
+F5 "FX_Return" I R 2850 4400 60 
+F6 "9V" I L 1700 3700 60 
+F7 "Ctrl" I L 1700 3900 60 
+F8 "Sig-GND" I L 1700 4550 60 
 $EndSheet
 Wire Wire Line
-	2850 4350 3500 4350
+	4250 3400 4450 3400
 Wire Wire Line
-	3500 4350 3500 3400
+	4350 3400 4350 3150
+Wire Wire Line
+	4350 3150 4500 3150
+Connection ~ 4350 3400
+Wire Wire Line
+	4950 3400 5150 3400
+Wire Wire Line
+	5050 3400 5050 3150
+Wire Wire Line
+	5050 3150 4900 3150
+Connection ~ 5050 3400
+Wire Wire Line
+	5550 3400 5850 3400
+Wire Wire Line
+	5050 2100 5800 2100
+Wire Wire Line
+	5800 2100 5800 3200
+Wire Wire Line
+	5800 3200 5850 3200
+Wire Wire Line
+	5150 2200 5150 2100
+Connection ~ 5150 2100
+Wire Wire Line
+	5450 2250 5450 2100
+Connection ~ 5450 2100
+Wire Wire Line
+	5450 2700 5450 2650
+Wire Wire Line
+	2300 2000 2300 2100
+Wire Wire Line
+	2000 2100 2000 2000
+Connection ~ 2000 2000
+Wire Wire Line
+	2000 2600 2000 2500
+Wire Wire Line
+	2300 2600 2300 2500
+Connection ~ 2000 2600
+Wire Wire Line
+	2150 2600 2150 2650
+Connection ~ 2150 2600
+Wire Wire Line
+	1900 2000 2300 2000
+Wire Wire Line
+	4450 2100 4550 2100
+Wire Wire Line
+	6250 2900 6250 2800
+Wire Wire Line
+	6350 3950 6400 3950
+Wire Wire Line
+	5700 4200 6150 4200
+Wire Wire Line
+	5700 3400 5700 4300
+Connection ~ 5700 3400
+Wire Wire Line
+	5700 3950 5950 3950
+Wire Wire Line
+	7000 4200 6650 4200
+Wire Wire Line
+	7000 3300 7000 4300
+Wire Wire Line
+	7000 3950 6900 3950
+Wire Wire Line
+	6850 3300 7150 3300
+Connection ~ 7000 3950
+Connection ~ 5700 3950
+Connection ~ 7000 4200
+Connection ~ 5700 4200
+Wire Wire Line
+	5700 4700 5700 4800
+Wire Wire Line
+	5700 4800 7000 4800
+Wire Wire Line
+	7000 4800 7000 4700
+Connection ~ 7000 3300
+Wire Wire Line
+	7550 3300 7700 3300
+Wire Wire Line
+	7700 3300 7700 3450
+Wire Wire Line
+	7700 4050 7700 3950
 Wire Wire Line
 	3500 3400 3750 3400
 Wire Wire Line
-	2850 4500 3500 4500
-Wire Wire Line
-	3500 4500 3500 5100
+	3500 4400 3500 5100
 Wire Wire Line
 	3500 5100 8100 5100
 Wire Wire Line
 	8100 5100 8100 3700
 Wire Wire Line
 	8100 3700 7850 3700
+Wire Wire Line
+	2850 4400 3500 4400
+Wire Wire Line
+	2850 4250 3500 4250
+Wire Wire Line
+	3500 4250 3500 3400
+Text HLabel 1500 3700 0    60   Input ~ 0
+9V_Wah
+Wire Wire Line
+	1500 3700 1700 3700
+Wire Wire Line
+	1900 2600 2300 2600
+Text HLabel 1900 2600 0    60   Input ~ 0
+GND
 $EndSCHEMATC
