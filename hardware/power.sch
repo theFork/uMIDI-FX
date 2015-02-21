@@ -51,8 +51,6 @@ Text HLabel 6500 2250 2    60   Output ~ 0
 6V_VCA
 Text HLabel 6500 3800 2    60   Output ~ 0
 -6V_VCA
-Text HLabel 9200 5800 2    60   Output ~ 0
-GND
 Text HLabel 6150 5300 2    60   Output ~ 0
 9V_Wah
 Text HLabel 2950 5300 2    60   Output ~ 0
@@ -1403,21 +1401,6 @@ Wire Wire Line
 	2600 2250 5200 2250
 Connection ~ 6300 2250
 Connection ~ 6300 3800
-$Comp
-L GND #PWR?
-U 1 1 54D4F5A1
-P 9100 5900
-F 0 "#PWR?" H 9100 5650 60  0001 C CNN
-F 1 "GND" H 9100 5750 60  0000 C CNN
-F 2 "" H 9100 5900 60  0000 C CNN
-F 3 "" H 9100 5900 60  0000 C CNN
-	1    9100 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 5900 9100 5800
-Wire Wire Line
-	9100 5800 9200 5800
 $Comp
 L LM7809CT U?
 U 1 1 54D50C97
