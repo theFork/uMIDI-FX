@@ -302,7 +302,7 @@ F2 "Loop_In" I L 3150 4800 60
 F3 "Loop_Out" O L 3150 4650 60 
 F4 "FX_Send" O R 4300 4200 60 
 F5 "FX_Return" I R 4300 4400 60 
-F7 "Ctrl" I L 3150 4400 60 
+F6 "Ctrl" I L 3150 4400 60 
 $EndSheet
 Wire Wire Line
 	3900 2300 4100 2300

@@ -37,7 +37,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 19
+Sheet 15 19
 Title ""
 Date ""
 Rev ""
@@ -48,7 +48,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 3400 3400 1100 1100
+S 3400 3400 1100 600 
 U 54E9BE9F
 F0 "Single True Bypass" 60
 F1 "bypass.sch" 60
@@ -56,7 +56,7 @@ F2 "Loop_In" I L 3400 3700 60
 F3 "Loop_Out" O R 4500 3700 60 
 F4 "FX_Send" O L 3400 3500 60 
 F5 "FX_Return" I R 4500 3500 60 
-F7 "Ctrl" I L 3400 4400 60 
+F6 "Ctrl" I L 3400 3900 60 
 $EndSheet
 $Comp
 L Jack_Stacked CON?
@@ -113,7 +113,7 @@ Connection ~ 5100 2600
 Wire Wire Line
 	5300 1550 5100 1550
 Connection ~ 5100 1650
-Text HLabel 2800 4400 0    60   Input ~ 0
+Text HLabel 2800 3900 0    60   Input ~ 0
 Ctrl
 Text HLabel 2800 3700 0    60   Input ~ 0
 Loop_In
@@ -121,8 +121,6 @@ Text HLabel 5300 3700 2    60   Output ~ 0
 Loop_Out
 Wire Wire Line
 	2800 3700 3400 3700
-Wire Wire Line
-	2800 4400 3400 4400
 Wire Wire Line
 	4500 3700 5300 3700
 $Comp
@@ -140,4 +138,10 @@ F 3 "" H 5100 3300 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	5100 3200 5300 3200
+Text Notes 6850 2950 0    60   ~ 0
+FX Send
+Text Notes 6850 2100 0    60   ~ 0
+FX Return
+Wire Wire Line
+	2800 3900 3400 3900
 $EndSCHEMATC
