@@ -73,4 +73,4 @@ LibName29=contrib
 LibName30=valves
 LibName31=max1044
 LibName32=stacked_jack
-LibName33=relais_dpdt
+LibName33=relais

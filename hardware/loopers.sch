@@ -31,7 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:max1044
 LIBS:stacked_jack
-LIBS:relais_dpdt
+LIBS:relais
 LIBS:uMIDI-FX-cache
 EELAYER 24 0
 EELAYER END
