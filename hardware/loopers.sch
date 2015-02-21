@@ -265,60 +265,46 @@ Wire Wire Line
 Connection ~ 9900 850 
 Wire Wire Line
 	2500 3200 2500 3000
-Text HLabel 1100 4000 0    60   Input ~ 0
+Text HLabel 1200 3800 3    60   Input ~ 0
 Tune
-Text HLabel 1100 4200 0    60   Input ~ 0
+Text HLabel 2500 3800 3    60   Input ~ 0
 Looper1
-Text HLabel 1100 4400 0    60   Input ~ 0
+Text HLabel 3700 3800 3    60   Input ~ 0
 Looper2
-Text HLabel 1100 4600 0    60   Input ~ 0
+Text HLabel 4900 3800 3    60   Input ~ 0
 Looper3
-Text HLabel 1100 4800 0    60   Input ~ 0
+Text HLabel 6100 3800 3    60   Input ~ 0
 Looper4
-Text HLabel 1100 5000 0    60   Input ~ 0
+Text HLabel 7300 3800 3    60   Input ~ 0
 Looper5
-Text HLabel 1100 5200 0    60   Input ~ 0
+Text HLabel 8500 3800 3    60   Input ~ 0
 Looper6
-Wire Wire Line
-	1200 4000 1200 3600
 Wire Wire Line
 	1200 3600 1300 3600
 Wire Wire Line
-	1100 4000 1200 4000
-Wire Wire Line
-	1100 4200 2500 4200
-Wire Wire Line
-	2500 4200 2500 3600
-Wire Wire Line
 	2500 3600 2600 3600
-Wire Wire Line
-	1100 4400 3700 4400
-Wire Wire Line
-	3700 4400 3700 3600
 Wire Wire Line
 	3700 3600 3800 3600
 Wire Wire Line
-	1100 4600 4900 4600
-Wire Wire Line
-	4900 4600 4900 3600
-Wire Wire Line
 	4900 3600 5000 3600
-Wire Wire Line
-	1100 4800 6100 4800
-Wire Wire Line
-	6100 4800 6100 3600
 Wire Wire Line
 	6100 3600 6200 3600
 Wire Wire Line
-	1100 5000 7300 5000
-Wire Wire Line
-	7300 5000 7300 3600
-Wire Wire Line
 	7300 3600 7400 3600
 Wire Wire Line
-	1100 5200 8500 5200
-Wire Wire Line
-	8500 5200 8500 3600
-Wire Wire Line
 	8500 3600 8600 3600
+Wire Wire Line
+	8500 3800 8500 3600
+Wire Wire Line
+	1200 3800 1200 3600
+Wire Wire Line
+	2500 3600 2500 3800
+Wire Wire Line
+	3700 3800 3700 3600
+Wire Wire Line
+	4900 3800 4900 3600
+Wire Wire Line
+	6100 3750 6100 3600
+Wire Wire Line
+	7300 3800 7300 3600
 $EndSCHEMATC
