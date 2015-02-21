@@ -37,7 +37,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 19
+Sheet 18 19
 Title ""
 Date ""
 Rev ""
@@ -306,7 +306,6 @@ F4 "FX_Send" O R 2850 4250 60
 F5 "FX_Return" I R 2850 4400 60 
 F6 "9V" I L 1700 3700 60 
 F7 "Ctrl" I L 1700 3900 60 
-F8 "Sig-GND" I L 1700 4550 60 
 $EndSheet
 Wire Wire Line
 	4250 3400 4450 3400
