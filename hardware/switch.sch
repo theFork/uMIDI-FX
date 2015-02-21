@@ -37,7 +37,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 17 21
+Sheet 20 21
 Title ""
 Date ""
 Rev ""
@@ -49,9 +49,9 @@ Comment4 ""
 $EndDescr
 Text HLabel 4900 3050 0    60   Input ~ 0
 Ctrl
-Text HLabel 6350 2250 0    60   BiDi ~ 0
+Text HLabel 6350 2000 1    60   BiDi ~ 0
 A
-Text HLabel 6300 2400 0    60   BiDi ~ 0
+Text HLabel 6350 2600 3    60   BiDi ~ 0
 B
 $Comp
 L BSS138 Q?
@@ -197,10 +197,10 @@ Wire Wire Line
 Wire Wire Line
 	5500 2600 5500 2800
 Wire Wire Line
-	5700 2600 5700 2500
+	5700 2600 5700 2450
 Connection ~ 5500 2600
 Wire Wire Line
-	5700 2000 5700 2100
+	5700 2000 5700 2150
 Connection ~ 5300 2000
 $Comp
 L GND #PWR?
@@ -215,6 +215,30 @@ F 3 "" H 4800 2550 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4800 2550 4800 2500
-Text Notes 5800 2300 0    60   ~ 0
-TODO
+$Comp
+L Relais_SPST REL?
+U 1 1 54E8CCF9
+P 5700 2300
+F 0 "REL?" H 5700 2500 60  0000 C CNN
+F 1 "Meder SIL05-1A72-71L" H 5700 2600 60  0000 C CNN
+F 2 "" H 5700 2300 60  0000 C CNN
+F 3 "" H 5700 2300 60  0000 C CNN
+	1    5700 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Relais_SPST REL?
+U 2 1 54E8CD35
+P 6350 2300
+F 0 "REL?" H 6350 2500 60  0000 C CNN
+F 1 "Relais_SPST" H 6350 2000 60  0001 C CNN
+F 2 "" H 6350 2300 60  0000 C CNN
+F 3 "" H 6350 2300 60  0000 C CNN
+	2    6350 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 2600 6350 2550
+Wire Wire Line
+	6350 2050 6350 2000
 $EndSCHEMATC
