@@ -37,7 +37,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 19
+Sheet 3 21
 Title ""
 Date ""
 Rev ""
@@ -307,4 +307,54 @@ Wire Wire Line
 	6100 3750 6100 3600
 Wire Wire Line
 	7300 3800 7300 3600
+$Sheet
+S 9000 4500 600  400 
+U 54E8DAE1
+F0 "SwitchTip" 60
+F1 "switch.sch" 60
+F2 "Ctrl" I L 9000 4700 60 
+F3 "A" B R 9600 4600 60 
+F4 "B" B R 9600 4800 60 
+$EndSheet
+$Sheet
+S 9000 5200 600  400 
+U 54E90580
+F0 "SwitchRing" 60
+F1 "switch.sch" 60
+F2 "Ctrl" I L 9000 5400 60 
+F3 "A" B R 9600 5300 60 
+F4 "B" B R 9600 5500 60 
+$EndSheet
+Text HLabel 8900 4700 0    60   Input ~ 0
+SwitchTip
+Text HLabel 8900 5400 0    60   Input ~ 0
+SwitchRing
+Wire Wire Line
+	8900 4700 9000 4700
+Wire Wire Line
+	8900 5400 9000 5400
+Wire Wire Line
+	9800 1800 10300 1800
+Wire Wire Line
+	9800 2000 10200 2000
+Wire Wire Line
+	9800 1600 10400 1600
+NoConn ~ 9800 1700
+NoConn ~ 9800 1900
+NoConn ~ 9800 2100
+Wire Wire Line
+	9600 4600 10200 4600
+Wire Wire Line
+	10200 4600 10200 2000
+Wire Wire Line
+	10300 1800 10300 5300
+Wire Wire Line
+	10300 5300 9600 5300
+Wire Wire Line
+	9600 4800 10400 4800
+Wire Wire Line
+	10400 1600 10400 5500
+Wire Wire Line
+	10400 5500 9600 5500
+Connection ~ 10400 4800
 $EndSCHEMATC

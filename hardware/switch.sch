@@ -1,0 +1,220 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:max1044
+LIBS:stacked_jack
+LIBS:relais_dpdt
+LIBS:uMIDI-FX-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 17 21
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4900 3050 0    60   Input ~ 0
+Ctrl
+Text HLabel 6350 2250 0    60   BiDi ~ 0
+A
+Text HLabel 6300 2400 0    60   BiDi ~ 0
+B
+$Comp
+L BSS138 Q?
+U 1 1 54E8DEE8
+P 5400 3000
+F 0 "Q?" H 5400 2851 40  0000 R CNN
+F 1 "BSS138" H 5400 3150 40  0000 R CNN
+F 2 "SOT-23" H 5270 3102 29  0000 C CNN
+F 3 "" H 5400 3000 60  0000 C CNN
+	1    5400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54E8DF2C
+P 5100 3400
+F 0 "R?" V 5180 3400 50  0000 C CNN
+F 1 "10k" V 5107 3401 50  0000 C CNN
+F 2 "" V 5030 3400 30  0000 C CNN
+F 3 "" H 5100 3400 30  0000 C CNN
+	1    5100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3150 5100 3050
+Wire Wire Line
+	4900 3050 5200 3050
+Connection ~ 5100 3050
+$Comp
+L GND #PWR?
+U 1 1 54E8DF95
+P 5100 3750
+F 0 "#PWR?" H 5100 3500 60  0001 C CNN
+F 1 "GND" H 5100 3600 60  0000 C CNN
+F 2 "" H 5100 3750 60  0000 C CNN
+F 3 "" H 5100 3750 60  0000 C CNN
+	1    5100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3750 5100 3650
+$Comp
+L C C?
+U 1 1 54E8E18C
+P 4100 2300
+F 0 "C?" H 4150 2400 50  0000 L CNN
+F 1 "100n" H 4150 2200 50  0000 L CNN
+F 2 "" H 4138 2150 30  0000 C CNN
+F 3 "" H 4100 2300 60  0000 C CNN
+	1    4100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 54E8E1C0
+P 4450 2000
+F 0 "R?" V 4530 2000 50  0000 C CNN
+F 1 "180" V 4457 2001 50  0000 C CNN
+F 2 "" V 4380 2000 30  0000 C CNN
+F 3 "" H 4450 2000 30  0000 C CNN
+	1    4450 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 54E8E27F
+P 4800 2300
+F 0 "C?" H 4850 2400 50  0000 L CNN
+F 1 "100n" H 4850 2200 50  0000 L CNN
+F 2 "" H 4838 2150 30  0000 C CNN
+F 3 "" H 4800 2300 60  0000 C CNN
+	1    4800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2100 4100 2000
+Wire Wire Line
+	4000 2000 4200 2000
+Wire Wire Line
+	4700 2000 5700 2000
+Wire Wire Line
+	4800 2000 4800 2100
+$Comp
+L GND #PWR?
+U 1 1 54E8E35E
+P 4100 2550
+F 0 "#PWR?" H 4100 2300 60  0001 C CNN
+F 1 "GND" H 4100 2400 60  0000 C CNN
+F 2 "" H 4100 2550 60  0000 C CNN
+F 3 "" H 4100 2550 60  0000 C CNN
+	1    4100 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2550 4100 2500
+Wire Wire Line
+	4800 2500 4800 2500
+$Comp
+L +9V #PWR?
+U 1 1 54E8E5BD
+P 4000 1900
+F 0 "#PWR?" H 4000 1750 60  0001 C CNN
+F 1 "+9V" H 4000 2040 60  0000 C CNN
+F 2 "" H 4000 1900 60  0000 C CNN
+F 3 "" H 4000 1900 60  0000 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1900 4000 2000
+Connection ~ 4100 2000
+$Comp
+L GND #PWR?
+U 1 1 54E8E61E
+P 5500 3750
+F 0 "#PWR?" H 5500 3500 60  0001 C CNN
+F 1 "GND" H 5500 3600 60  0000 C CNN
+F 2 "" H 5500 3750 60  0000 C CNN
+F 3 "" H 5500 3750 60  0000 C CNN
+	1    5500 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3750 5500 3200
+$Comp
+L DIODE D?
+U 1 1 54E8EB7A
+P 5300 2300
+F 0 "D?" H 5300 2400 50  0000 C CNN
+F 1 "DIODE" H 5300 2200 50  0000 C CNN
+F 2 "" H 5300 2300 60  0000 C CNN
+F 3 "" H 5300 2300 60  0000 C CNN
+	1    5300 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 2000 5300 2100
+Connection ~ 4800 2000
+Wire Wire Line
+	5300 2500 5300 2600
+Wire Wire Line
+	5300 2600 5700 2600
+Wire Wire Line
+	5500 2600 5500 2800
+Wire Wire Line
+	5700 2600 5700 2500
+Connection ~ 5500 2600
+Wire Wire Line
+	5700 2000 5700 2100
+Connection ~ 5300 2000
+$Comp
+L GND #PWR?
+U 1 1 54E8ED21
+P 4800 2550
+F 0 "#PWR?" H 4800 2300 60  0001 C CNN
+F 1 "GND" H 4800 2400 60  0000 C CNN
+F 2 "" H 4800 2550 60  0000 C CNN
+F 3 "" H 4800 2550 60  0000 C CNN
+	1    4800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2550 4800 2500
+Text Notes 5800 2300 0    60   ~ 0
+TODO
+$EndSCHEMATC
