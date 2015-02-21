@@ -62,7 +62,7 @@ $Sheet
 S 3800 3100 1000 600 
 U 54E9F8A8
 F0 "Looper2" 60
-F1 "Looper.sch" 60
+F1 "looper.sch" 60
 F2 "Ctrl" I L 3800 3600 60 
 F3 "Loop_In" I L 3800 3400 60 
 F4 "Loop_Out" O R 4800 3400 60 
@@ -71,7 +71,7 @@ $Sheet
 S 5000 3100 1000 600 
 U 54E9FD8E
 F0 "Looper3" 60
-F1 "Looper.sch" 60
+F1 "looper.sch" 60
 F2 "Ctrl" I L 5000 3600 60 
 F3 "Loop_In" I L 5000 3400 60 
 F4 "Loop_Out" O R 6000 3400 60 
@@ -80,7 +80,7 @@ $Sheet
 S 6200 3100 1000 600 
 U 54EA08BF
 F0 "Looper4" 60
-F1 "Looper.sch" 60
+F1 "looper.sch" 60
 F2 "Ctrl" I L 6200 3600 60 
 F3 "Loop_In" I L 6200 3400 60 
 F4 "Loop_Out" O R 7200 3400 60 
@@ -89,7 +89,7 @@ $Sheet
 S 7400 3100 1000 600 
 U 54EA08C5
 F0 "Looper5" 60
-F1 "Looper.sch" 60
+F1 "looper.sch" 60
 F2 "Ctrl" I L 7400 3600 60 
 F3 "Loop_In" I L 7400 3400 60 
 F4 "Loop_Out" O R 8400 3400 60 
@@ -110,7 +110,7 @@ $Sheet
 S 8600 3100 1000 600 
 U 54EA08CB
 F0 "Looper6" 60
-F1 "Looper.sch" 60
+F1 "looper.sch" 60
 F2 "Ctrl" I L 8600 3600 60 
 F3 "Loop_In" I L 8600 3400 60 
 F4 "Loop_Out" O R 9600 3400 60 
@@ -119,7 +119,7 @@ $Sheet
 S 2600 3100 1000 600 
 U 54E9BE87
 F0 "Looper1" 60
-F1 "Looper.sch" 60
+F1 "looper.sch" 60
 F2 "Ctrl" I L 2600 3600 60 
 F3 "Loop_In" I L 2600 3400 60 
 F4 "Loop_Out" O R 3600 3400 60 
