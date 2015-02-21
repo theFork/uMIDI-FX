@@ -53,8 +53,6 @@ Text HLabel 6500 3800 2    60   Output ~ 0
 -6V_VCA
 Text HLabel 6150 5300 2    60   Output ~ 0
 9V_Wah
-Text HLabel 2950 5300 2    60   Output ~ 0
-9V_Digital
 $Comp
 L BARREL_JACK CON?
 U 1 1 54D12EE0
@@ -1539,7 +1537,7 @@ Connection ~ 1150 5300
 Wire Wire Line
 	1950 5800 1950 5600
 Wire Wire Line
-	2350 5300 2950 5300
+	2350 5300 3050 5300
 $Comp
 L LM7809CT U?
 U 1 1 54D5131C
@@ -1679,4 +1677,19 @@ Wire Wire Line
 	5150 5800 5150 5600
 Wire Wire Line
 	5550 5300 6150 5300
+$Comp
+L +9V #PWR?
+U 1 1 54E93105
+P 3050 5250
+F 0 "#PWR?" H 3050 5100 60  0001 C CNN
+F 1 "+9V" H 3050 5390 60  0000 C CNN
+F 2 "" H 3050 5250 60  0000 C CNN
+F 3 "" H 3050 5250 60  0000 C CNN
+	1    3050 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 5300 3050 5250
+Text Notes 1300 5000 0    60   ~ 0
+Global digital 9V for uMidi and loopers
 $EndSCHEMATC

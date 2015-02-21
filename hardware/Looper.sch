@@ -56,7 +56,6 @@ F2 "Loop_In" I L 3400 3700 60
 F3 "Loop_Out" O R 4500 3700 60 
 F4 "FX_Send" O L 3400 3500 60 
 F5 "FX_Return" I R 4500 3500 60 
-F6 "9V" I L 3400 4000 60 
 F7 "Ctrl" I L 3400 4400 60 
 $EndSheet
 $Comp
@@ -114,8 +113,6 @@ Connection ~ 5100 2600
 Wire Wire Line
 	5300 1550 5100 1550
 Connection ~ 5100 1650
-Text HLabel 2800 4000 0    60   Input ~ 0
-9V
 Text HLabel 2800 4400 0    60   Input ~ 0
 Ctrl
 Text HLabel 2800 3700 0    60   Input ~ 0
@@ -124,8 +121,6 @@ Text HLabel 5300 3700 2    60   Output ~ 0
 Loop_Out
 Wire Wire Line
 	2800 3700 3400 3700
-Wire Wire Line
-	2800 4000 3400 4000
 Wire Wire Line
 	2800 4400 3400 4400
 Wire Wire Line

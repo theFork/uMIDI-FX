@@ -55,8 +55,6 @@ Text HLabel 4200 3500 1    60   Output ~ 0
 FX_Send
 Text HLabel 4700 3500 1    60   Input ~ 0
 FX_Return
-Text HLabel 6550 3000 0    60   Input ~ 0
-9V
 Text HLabel 7200 4150 0    60   Input ~ 0
 Ctrl
 $Comp
@@ -119,21 +117,15 @@ $EndComp
 Wire Wire Line
 	3300 3800 3500 3800
 Wire Wire Line
-	4000 3900 4450 3900
-Wire Wire Line
-	4450 3900 4900 3900
+	4000 3900 4900 3900
 Wire Wire Line
 	5400 3800 5600 3800
 Wire Wire Line
 	4000 3650 4200 3650
 Wire Wire Line
-	4200 3500 4200 3650
+	4200 3500 4200 4000
 Wire Wire Line
-	4200 3650 4200 4000
-Wire Wire Line
-	4700 3500 4700 3650
-Wire Wire Line
-	4700 3650 4700 4000
+	4700 3500 4700 4000
 Wire Wire Line
 	4700 3650 4900 3650
 $Comp
@@ -199,13 +191,11 @@ Wire Wire Line
 	4450 4000 4450 3900
 Connection ~ 4450 3900
 Wire Wire Line
-	4200 4600 4450 4600
+	4200 4600 4700 4600
 Wire Wire Line
 	4700 4600 4700 4500
 Wire Wire Line
-	4450 4500 4450 4600
-Wire Wire Line
-	4450 4600 4450 4700
+	4450 4500 4450 4700
 Connection ~ 4450 4600
 Wire Wire Line
 	4200 4500 4200 4600
@@ -229,15 +219,9 @@ F 3 "" H 7750 3300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6550 3000 6750 3000
+	6500 3000 6850 3000
 Wire Wire Line
-	6750 3000 6850 3000
-Wire Wire Line
-	7350 3000 7450 3000
-Wire Wire Line
-	7450 3000 7750 3000
-Wire Wire Line
-	7750 3000 8050 3000
+	7350 3000 8050 3000
 Wire Wire Line
 	7750 3000 7750 3100
 Wire Wire Line
@@ -246,9 +230,7 @@ Connection ~ 7750 3000
 Wire Wire Line
 	7750 3500 7750 3600
 Wire Wire Line
-	7750 3600 7900 3600
-Wire Wire Line
-	7900 3600 8050 3600
+	7750 3600 8050 3600
 Wire Wire Line
 	8050 3600 8050 3450
 Wire Wire Line
@@ -374,9 +356,7 @@ F 3 "" H 7500 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 4150 7500 4150
-Wire Wire Line
-	7500 4150 7600 4150
+	7200 4150 7600 4150
 Wire Wire Line
 	7500 4150 7500 4250
 Connection ~ 7500 4150
@@ -454,6 +434,19 @@ F 3 "" H 4450 4700 60  0000 C CNN
 	1    4450 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L +9V #PWR?
+U 1 1 54E940D4
+P 6500 2950
+AR Path="/54D120FF/54E9F8A8/54E9BE9F/54E940D4" Ref="#PWR?"  Part="1" 
+AR Path="/54D5349F/54D53732/54E940D4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6500 2800 60  0001 C CNN
+F 1 "+9V" H 6500 3090 60  0000 C CNN
+F 2 "" H 6500 2950 60  0000 C CNN
+F 3 "" H 6500 2950 60  0000 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4450 4600 4700 4600
+	6500 2950 6500 3000
 $EndSCHEMATC

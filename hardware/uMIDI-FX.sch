@@ -67,7 +67,6 @@ F1 "power.sch" 60
 F2 "9V_Wah" O R 2450 1450 60 
 F3 "-6V_VCA" O R 2450 1800 60 
 F4 "6V_VCA" O R 2450 1700 60 
-F6 "9V_Digital" O R 2450 2100 60 
 $EndSheet
 $Sheet
 S 1900 4350 600  600 
