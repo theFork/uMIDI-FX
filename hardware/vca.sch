@@ -38,7 +38,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 23
+Sheet 23 23
 Title ""
 Date ""
 Rev ""
@@ -48,4 +48,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L THAT2180 U?
+U 1 1 54EA31E2
+P 5600 3700
+F 0 "U?" H 5900 4050 60  0000 C CNN
+F 1 "THAT2180" H 6000 3900 60  0000 C CNN
+F 2 "" H 5600 3700 60  0000 C CNN
+F 3 "" H 5600 3700 60  0000 C CNN
+	1    5600 3700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -38,7 +38,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 22
+Sheet 1 23
 Title ""
 Date ""
 Rev ""
@@ -160,4 +160,10 @@ Wire Wire Line
 Connection ~ 7500 1300
 Text Notes 7850 1350 0    60   ~ 0
 Slave\naddress\n0x40
+$Sheet
+S 7550 3800 1000 700 
+U 54EA3170
+F0 "VCA" 60
+F1 "vca.sch" 60
+$EndSheet
 $EndSCHEMATC
