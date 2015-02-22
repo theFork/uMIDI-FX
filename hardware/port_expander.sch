@@ -38,7 +38,7 @@ EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 22
+Sheet 22 22
 Title ""
 Date ""
 Rev ""
@@ -48,4 +48,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L TCA9555 U?
+U 1 1 54E9D22B
+P 5500 3750
+F 0 "U?" H 5500 2750 60  0000 C CNN
+F 1 "TCA9555" H 5500 4750 60  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-24-1EP_4x4mm_Pitch0.5mm" H 5500 3750 60  0001 C CNN
+F 3 "" H 5500 3750 60  0000 C CNN
+	1    5500 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

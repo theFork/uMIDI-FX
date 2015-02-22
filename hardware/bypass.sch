@@ -32,12 +32,13 @@ LIBS:valves
 LIBS:max1044
 LIBS:stacked_jack
 LIBS:relais
+LIBS:tca9555
 LIBS:uMIDI-FX-cache
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 21
+Sheet 5 22
 Title ""
 Date ""
 Rev ""

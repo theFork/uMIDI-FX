@@ -32,12 +32,13 @@ LIBS:valves
 LIBS:max1044
 LIBS:stacked_jack
 LIBS:relais
+LIBS:tca9555
 LIBS:uMIDI-FX-cache
 EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 21
+Sheet 1 22
 Title ""
 Date ""
 Rev ""
@@ -85,5 +86,11 @@ F7 "Looper5" I L 5150 2800 60
 F8 "Looper6" I L 5150 2950 60 
 F9 "SwitchTip" I L 5150 3100 60 
 F10 "SwitchRing" I L 5150 3250 60 
+$EndSheet
+$Sheet
+S 4700 4250 1150 950 
+U 54E9D1C8
+F0 "Port Expander" 60
+F1 "port_expander.sch" 60
 $EndSheet
 $EndSCHEMATC
