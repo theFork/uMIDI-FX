@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TCA9555
+D 16-Pin I2C Port Expander. Pin numbers for the QFN package!
+$ENDCMP
+#
+#End Doc Library

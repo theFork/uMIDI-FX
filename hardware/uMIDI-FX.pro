@@ -1,4 +1,4 @@
-update=Sun 08 Feb 2015 06:09:50 PM CET
+update=Sun 22 Feb 2015 01:02:14 PM CET
 version=1
 last_client=kicad
 [cvpcb]
@@ -74,3 +74,4 @@ LibName30=valves
 LibName31=max1044
 LibName32=stacked_jack
 LibName33=relais
+LibName34=tca9555
